@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>CV - Ruan</title>
+</head>
+
+<body>
+
+  <header>
+    <span class="name-title">CV Ruan</span>
+
+    <nav>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#formacao">Formação</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Sobre -->
+    <section id="sobre">
+      <h2 class="section-title">Sobre mim</h2>
+      <div class="content">
+        <figure class="my-photo">
+          <img src="./img/ruandqm.jpg" alt="minha foto">
+        </figure>
+
+        <article class="sobre-description">
+          <h4>
+            Ruan de Queiroz, 19 anos
+          </h4>
+          <p>Desde criança, sou apaixonado por tecnologia e engenharia. Fiz curso técnico em Informática de forma
+            integrada e, a partir disso, tive um crescente fascínio pelo universo da programação. Hoje, busco ter cada
+            vez
+            mais contato com esse extraordinário mundo de inovação e aprimorar minhas habilidades e conhecimentos para
+            produzir ferramentas de qualidade e ajudar pessoas.
+          </p>
+
+          <p>
+            Possuo experiência em desenvolvimento de softwares para a web utilizando tecnologias modernas como React,
+            Next.js, Tailwind, Typescript, Node.js, Express, MongoDB e MySQL.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Formacao -->
+    <section id="formacao">
+      <h2 class="section-title">Formação</h2>
+      <div class="content">
+        <article class="formacao-grid">
+          <figure class="formacao-item">
+            <img src="./img/code.svg" alt="engenharia de software icon">
+            <figcaption class="formacao-description">
+              <h3>
+                Bacharelado em Engenharia de Software (em curso)
+              </h3>
+              <h4>
+                UNINTER
+              </h4>
+            </figcaption>
+          </figure>
+
+          <figure class="formacao-item">
+            <img src="./img/react.svg" alt="engenharia de software icon">
+            <figcaption class="formacao-description">
+              <h3>
+                Desenvolvimento Front-End com React (curso livre)
+              </h3>
+              <h4>
+                DODEV
+              </h4>
+            </figcaption>
+          </figure>
+
+          <figure class="formacao-item">
+            <img src="./img/aws.svg" alt="engenharia de software icon">
+            <figcaption class="formacao-description">
+              <h3>
+                AWS Academy Graduate (curso livre)
+              </h3>
+              <h4>
+                AWS
+              </h4>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h2 class="section-title">Portfólio</h2>
+      <div class="content">
+        <div class="portfolio-container">
+          <figure class="portfolio-item">
+            <img src="./img/react-native.jpeg" alt="print do projeto">
+            <figcaption class="portfolio-description">
+              <a href="https://github.com/ruandqm/react-native-calculator">Calculadora em React Native</a>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-item">
+            <img src="./img/watchflix.png" alt="print do projeto">
+            <figcaption class="portfolio-description">
+              <a href="https://github.com/ruandqm/watchflix">Watchflix em React</a>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-item">
+            <img src="./img/weather.png" alt="print do projeto">
+            <figcaption class="portfolio-description">
+              <a href="https://github.com/ruandqm/weather-app">Weather App em React</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <h2 class="section-title">Contato</h2>
+      <form action="" onsubmit="handleSubmit(event)">
+        <div>
+          <label for="name">Nome</label>
+          <input type="text" name="name" class="input">
+        </div>
+
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" class="input">
+        </div>
+
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea name="msg" id="msg" class="input"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+      </form>
+
+    </section>
+  </main>
+
+  <!-- Script executado ao enviar o formulario de contato -->
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault()
+      alert("Ótimo! (Página demonstrativa, nenhum formulário será realmente enviado).")
+    }
+  </script>
+
+</body>
+
+</html>
